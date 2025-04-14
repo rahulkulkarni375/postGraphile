@@ -1,0 +1,47 @@
+# type Student {
+#   id: ID!
+#   name: String!
+#   phone_number: String!
+# }
+
+# type Query {
+#   getStudents: [Student]
+# }
+
+# type Mutation {
+#   addStudent(name: String!, phone_number: String!): Student
+# }
+
+# type Subscription {
+#   studentAdded: Student
+# }
+
+
+type Student {
+  id: ID!
+  name: String!
+  phone_number: String!
+}
+
+type Query {
+  getStudents: [Student]
+  getStudentById(id: ID!): Student
+}
+
+type Mutation {
+  addStudent(name: String!, phone_number: String!): Student
+  updateStudent(id: ID!, name: String, phone_number: String): Student
+  deleteStudent(id: ID!): DeleteResponse
+}
+
+type DeleteResponse {
+  success: Boolean!
+  message: String
+  id: ID
+}
+
+type Subscription {
+  studentAdded: Student
+  studentUpdated: Student
+  studentDeleted: ID
+}
