@@ -20,3 +20,26 @@ graphql-subscriptions
 subscriptions-transport-ws
 ```
 -- For other, refer backend folder
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone / Download ZIP the backend folder
+```
+
+Install dependencies as mentioned earlier
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  node server.js
+```
+
+This will run backend locally and you can test in apollo studio 
