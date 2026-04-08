@@ -1,0 +1,25 @@
+{
+  "name": "postgresgraphql",
+  "version": "1.0.0",
+  "description": "project/\r │\r ├── server.js                # Entry point\r ├── app.js                   # Express + Apollo setup\r │\r ├── graphql/\r │   ├── schema/\r │   │   └── typeDefs.graphql\r │   ├── resolvers/\r │   │   ├── index.js\r │   │   └── userResolver.js\r │   └── context.js\r │\r ├── services/                # 🔥 BUSINESS LOGIC (IMPORTANT)\r │   └── userService.js\r │\r ├── db/\r │   └── index.js             # DB connection\r │\r ├── jobs/\r │   └── cronJobs.js\r │\r └── utils/",
+  "keywords": [],
+  "license": "ISC",
+  "author": "rahulkulkarni",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.13.0",
+    "@graphql-tools/schema": "^10.0.31",
+    "dotenv": "^16.0.0",
+    "graphql": "^16.8.1",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-tag": "^2.12.6",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.0"
+  }
+}
